@@ -54,6 +54,7 @@ button{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 24px;
+    position: relative;
 }
 
 .search-input{
@@ -95,7 +96,7 @@ button{
 }
 
 .profile-container{
-    width: 480px;
+    min-width: 480px;
 }
 
 .profile-pic{
@@ -157,7 +158,8 @@ button{
     display: grid;
     grid-template-columns: auto auto;
     row-gap: 21px;
-    column-gap: 62px;
+    column-gap: 60px;
+    align-items: center;
 }
 
 .other-infos{
@@ -168,4 +170,16 @@ button{
 .other-infos-content{
     color: #4B6A9B;
     font-size: 15px;
+}
+
+/* No user Found */
+
+.error{
+    position: absolute;
+    right: 150px;
+    color: red;
+}
+
+.d-none{
+    display: none;
 }
