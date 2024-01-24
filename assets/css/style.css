@@ -19,6 +19,11 @@ body{
     width: 730px;
 }
 
+button{
+    cursor: pointer;
+}
+
+/* Header */
 .header{
     display: flex;
     justify-content: space-between;
@@ -32,8 +37,14 @@ body{
     align-items: center;
     border: none;
     background-color: transparent;
+    color: #697C9A;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    font-family: 'Space Mono', monospace;
 }
 
+/* Search Form */
 .search-form{
     padding: 10px 10px 10px 32px;
     border-radius: 15px;
@@ -72,4 +83,89 @@ body{
     color: #FFF;
     font-size: 16px;
     font-weight: 700;
+}
+
+/* Card Styling */
+.card-container{
+    border-radius: 15px;
+    background: #FEFEFE;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+    padding: 48px;
+    display: flex;
+}
+
+.profile-container{
+    width: 480px;
+}
+
+.profile-pic{
+    border-radius: 50%;
+    margin-right: 37px;
+    width: 117px;
+    height: 117px;
+}
+
+.profile-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-name{
+    color: #2B3442;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.user-address{
+    color: #0079FF;
+    font-size: 16px;
+}
+
+.bio{
+    margin-top: 20px;
+    margin-bottom: 32px;
+    color: #4B6A9B;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.github-infos-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 83px 17px 32px;
+    border-radius: 10px;
+    background: #F6F8FF;
+    margin-bottom: 37px;
+}
+
+.github-infos-title{
+    display: block;
+    color: #4B6A9B;
+    font-size: 13px;
+}
+
+.github-infos-content{
+    color: #2B3442;
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.other-infos-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 21px;
+    column-gap: 62px;
+}
+
+.other-infos{
+    display: flex;
+    gap: 20px;
+}
+
+.other-infos-content{
+    color: #4B6A9B;
+    font-size: 15px;
 }
