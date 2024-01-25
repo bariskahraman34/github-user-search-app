@@ -12,7 +12,6 @@ searchForm.addEventListener('submit',function(e){
 async function fetchGithub(person){
     const response = await fetch(`https://api.github.com/users/${person}`);
     const data = await response.json();
-    console.log(data)
     if(response.ok == false){
         noUserFound.style.display = "block";
     }else{
@@ -78,19 +77,15 @@ async function getPerson(person){
     `;
 
     if(!person.location){
-        console.log('person')
         document.querySelector('.location').style.opacity = '0.5';
     }
     if(!person.company){
-        console.log('company')
         document.querySelector('.company').style.opacity = '0.5';
     }
     if(!person.html_url){
-        console.log('blog')
         document.querySelector('.blog').style.opacity = '0.5';
     }
     if(!person.bio){
-        console.log('bio');
         document.querySelector('.bio').style.opacity = '0.5';
     }
     if(!person.twitter_username){
