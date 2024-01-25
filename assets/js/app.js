@@ -12,6 +12,7 @@ searchForm.addEventListener('submit',function(e){
 async function fetchGithub(person){
     const response = await fetch(`https://api.github.com/users/${person}`);
     const data = await response.json();
+    console.log(data)
     if(response.ok == false){
         noUserFound.style.display = "block";
     }else{
@@ -66,7 +67,8 @@ async function getPerson(person){
             </div>
             <div class="other-infos blog">
                 <img src="assets/img/url.svg" alt="">
-                <a href="${person.html_url}" class=" other-infos-content">${person.login}</a>
+                ${person.blog ? `<a href="${person.blog}" target="_blank" class=" other-infos-content">${person.login}</a>`:`<p class="other-infos-content">Not Available</p>`}
+                
             </div>
             <div class="other-infos company">
                 <img src="assets/img/building.svg" alt="">
@@ -82,7 +84,7 @@ async function getPerson(person){
     if(!person.company){
         document.querySelector('.company').style.opacity = '0.5';
     }
-    if(!person.html_url){
+    if(!person.blog){
         document.querySelector('.blog').style.opacity = '0.5';
     }
     if(!person.bio){
@@ -91,5 +93,4 @@ async function getPerson(person){
     if(!person.twitter_username){
         document.querySelector('.twitter').style.opacity = '0.5';
     }
-
 } 
