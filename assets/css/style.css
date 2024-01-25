@@ -205,6 +205,10 @@ a:hover{
 
 /* DARK THEME */
 
+.dark-theme{
+    transition: all .3s ease;
+}
+
 .dark-theme,
 .dark-theme .github-infos-container{
     background: #141D2F;
