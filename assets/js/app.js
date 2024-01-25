@@ -18,6 +18,7 @@ async function fetchGithub(person){
     }else{
         noUserFound.style.display = "none";
         getPerson(data);
+        searchInput.value = "";
     }
 }
 

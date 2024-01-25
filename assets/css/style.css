@@ -183,3 +183,35 @@ button{
 .d-none{
     display: none;
 }
+
+
+
+/* DARK THEME */
+
+.dark-theme,
+.dark-theme .github-infos-container{
+    background: #141D2F;
+}
+
+.dark-theme .search-form ,
+.dark-theme .search-input,
+.dark-theme .card-container
+{
+    background: #1E2A47;
+}
+
+.dark-theme .user-name,
+.dark-theme .join-date,
+.dark-theme .github-infos > span,
+.dark-theme .other-infos > a,
+.dark-theme .other-infos > p,
+.dark-theme .bio,
+.dark-theme .title,
+.dark-theme .theme-selector-btn,
+.dark-theme .search-form ,.dark-theme .search-input,
+.dark-theme .search-input::placeholder
+{
+    color: #fff;
+
+}
+
