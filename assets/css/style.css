@@ -172,6 +172,14 @@ button{
     font-size: 15px;
 }
 
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
 /* No user Found */
 
 .error{
